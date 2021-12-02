@@ -5,15 +5,17 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import { IArticle } from '../../../types/types';
+import { IArticle } from '../../../../types/types';
+
+import './articleCard.scss';
 
 export interface ArticleCardProps {
   article: IArticle;
 }
 
-export const ArticleCard: FC<ArticleCardProps> = ({article}) => {
+export const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card-item">
       <CardActionArea>
         <CardMedia
           component="img"

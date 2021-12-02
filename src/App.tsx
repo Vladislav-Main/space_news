@@ -1,9 +1,11 @@
 import React from 'react';
 
 import './App.scss';
+import { useRoutes } from './routes/routes';
 
 function App() {
-  return <div className="App _container">valera</div>;
+  const routes = useRoutes();
+  return <div className="App _container">{routes}</div>;
 }
 
 export default App;

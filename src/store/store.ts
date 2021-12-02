@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import articleReducer from './reducers/ArticlesSlice';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ articleReducer });
 
 export const setupStore = () => {
   return configureStore({ reducer: rootReducer });

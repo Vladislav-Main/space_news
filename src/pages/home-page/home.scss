@@ -1,0 +1,23 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 50px 0px 63px 0px;
+  &__search-block {
+    height: 75px;
+  }
+  &__loader-block {
+    width: 100%;
+    height: 50vh;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__results-block {
+    height: auto;
+    width: 100%;
+  }
+}
