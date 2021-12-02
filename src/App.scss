@@ -1,0 +1,13 @@
+@import './reset';
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  width: 1290px;
+  margin: 0px auto;
+  box-sizing: content-box;
+  border: 1px solid gray;
+}
