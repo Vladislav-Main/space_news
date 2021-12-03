@@ -39,10 +39,7 @@ export const articleSlice = createSlice({
       state.error = '';
       state.status = 'success';
     },
-    [fetchArticles.rejected.type]: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+    [fetchArticles.rejected.type]: (state, action: PayloadAction<string>) => {
       state.isLoading = false;
       state.status = 'failed';
       state.error = action.payload;

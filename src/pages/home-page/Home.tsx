@@ -7,6 +7,7 @@ import { fetchArticles } from '../../store/reducers/AsyncThunk';
 import { IArticle } from '../../types/types';
 import { Loader } from '../../ui-components/loader/Loader';
 import { ArticleList } from './components/article-list/ArticleList';
+import { SearchInput } from './components/search-input/SearchInput';
 import './home.scss';
 
 export const Home = () => {
@@ -21,8 +22,13 @@ export const Home = () => {
     dispatch(fetchArticles());
   }, []);
   return (
-    <div className="home-page">
-      <div className="home-page__search-block">Search</div>
+    <div className="home-page _container">
+      <div className="home-page__search-block detailed-page">
+        <div className="search-block__title">Filter by keywords</div>
+        <div className="search-block__input">
+          <SearchInput />
+        </div>
+      </div>
       {isLoading && (
         <div className="home-page__loader-block">
           <Loader />

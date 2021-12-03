@@ -1,0 +1,13 @@
+.date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__img {
+    margin: 10px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 150%;
+    color: #363636;
+  }
+}
