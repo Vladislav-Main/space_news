@@ -25,9 +25,11 @@ export const DetailedArticle: FC<ArticleDetailedArticleProps> = ({
         />
         <div className="main__article article _container">
           <ArticleBody title={article.title} summary={article.summary} />
-          <ButtonLink link={`/`} variant={Direction.left}>
-            Back to homepage
-          </ButtonLink>
+          <div className="article__button">
+            <ButtonLink link={`/`} variant={Direction.left}>
+              Back to homepage
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </div>
