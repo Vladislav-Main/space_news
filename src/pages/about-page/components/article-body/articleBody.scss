@@ -1,7 +1,7 @@
 .article {
   &__body {
     width: 100%;
-    height: 1001px;
+    height: auto;
     margin: 150px 0px 0px 0px;
     border-radius: 5px;
     display: flex;
@@ -34,6 +34,9 @@
 
 @media screen and (max-width: 991px) {
   .article {
+    &__body {
+      height: auto;
+    }
     &__title {
       margin: 35px 15px 0px 15px;
     }
@@ -45,6 +48,9 @@
 
 @media screen and (max-width: 767px) {
   .article {
+    &__body {
+      height: auto;
+    }
     &__title {
       margin: 35px 15px 0px 15px;
     }

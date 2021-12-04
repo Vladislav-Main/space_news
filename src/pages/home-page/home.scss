@@ -52,12 +52,10 @@
 
 @media screen and (max-width: 767px) {
   .home-page {
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     &__search-block {
-      height: 80px;
-      width: 400px;
-      margin: 0px 30px 40px 10px;
+      margin: 0px 10px 40px 10px;
     }
     &__results-block {
       width: 100%;
