@@ -31,3 +31,25 @@
     color: #000;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .article {
+    &__title {
+      margin: 35px 15px 0px 15px;
+    }
+    &__summary {
+      padding: 0px 50px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article {
+    &__title {
+      margin: 35px 15px 0px 15px;
+    }
+    &__summary {
+      padding: 0px 25px 25px;
+    }
+  }
+}
