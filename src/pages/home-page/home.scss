@@ -39,6 +39,11 @@
 @media screen and (max-width: 1288px) {
   .home-page {
     align-items: center;
+    &__search-block {
+      height: 80px;
+      width: 400px;
+      margin: 0px 10px 40px 10px;
+    }
     &__results-block {
       width: 100%;
     }
