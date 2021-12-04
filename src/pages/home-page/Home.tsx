@@ -48,7 +48,7 @@ export const Home = () => {
             sx={{
               p: '2px 4px',
               display: 'flex',
-              alignItems: 'flex-start',
+              alignItems: 'center',
               maxWidth: 600,
               marginRight: 6,
             }}
