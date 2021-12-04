@@ -11,11 +11,11 @@
   box-sizing: content-box;
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 991px) {
   ._container {
     max-width: 95vw;
     margin: 0px 10px;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 }
 
@@ -23,6 +23,6 @@
   ._container {
     max-width: 95vw;
     margin: 0px 10px;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 }
