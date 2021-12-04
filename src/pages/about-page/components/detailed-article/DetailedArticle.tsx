@@ -1,9 +1,12 @@
-import './detailedArticle.scss';
+import { FC } from 'react';
 
-import React, { FC } from 'react';
+import './detailedArticle.scss';
 import { IArticle } from '../../../../types/types';
-import { Link } from 'react-router-dom';
 import { ArticleBody } from '../article-body/ArticleBody';
+import {
+  ButtonLink,
+  Direction,
+} from '../../../../ui-components/buttons/ButtonLink';
 
 interface ArticleDetailedArticleProps {
   article: IArticle;
@@ -21,12 +24,10 @@ export const DetailedArticle: FC<ArticleDetailedArticleProps> = ({
           className="main__photo"
         />
         <div className="main__article article _container">
-          <ArticleBody title={article.title} summary={article.summary} />{' '}
-          <div className="article__button">
-            <Link to="/" className="link">
-              Back to homepage
-            </Link>
-          </div>
+          <ArticleBody title={article.title} summary={article.summary} />
+          <ButtonLink link={`/`} variant={Direction.left}>
+            Back to homepage
+          </ButtonLink>
         </div>
       </div>
     </div>

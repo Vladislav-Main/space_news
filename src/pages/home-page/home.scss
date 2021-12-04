@@ -19,7 +19,7 @@
     align-items: center;
   }
   &__results-block {
-    height: auto;
+    height: 100%;
     width: 100%;
   }
 }
@@ -33,5 +33,14 @@
     padding: 0px 0px 10px 0px;
   }
   &__input {
+  }
+}
+
+@media (max-width: 1288px) {
+  .home-page {
+    align-items: center;
+    &__results-block {
+      width: 100%;
+    }
   }
 }

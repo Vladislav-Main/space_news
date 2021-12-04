@@ -7,4 +7,5 @@ export interface IArticle {
   newsSite: string;
   summary: string;
   publishedAt?: string;
+  priority: number;
 }

@@ -3,6 +3,7 @@ import {
   createSlice,
   PayloadAction,
 } from '@reduxjs/toolkit';
+
 import { IArticle } from '../../types/types';
 import { RootState } from '../store';
 import { fetchArticles } from './AsyncThunk';
@@ -23,8 +24,13 @@ export const articleSlice = createSlice({
     status: '',
     isLoading: false,
     error: '',
+    searchTerm: '',
   }),
-  reducers: {},
+  reducers: {
+    setSearchTerm(state, action: PayloadAction<string>) {
+      state.searchTerm = action.payload;
+    },
+  },
   extraReducers: {
     [fetchArticles.pending.type]: (state) => {
       state.isLoading = true;

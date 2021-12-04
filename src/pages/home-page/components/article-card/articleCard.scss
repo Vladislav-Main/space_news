@@ -2,6 +2,10 @@
   margin: 0px 0px 45px 0px;
 }
 
+.card-item:not(:nth-child(3n)) {
+  margin: 0px 45px 0px 0px;
+}
+
 .card-item {
   width: 400px;
   height: 530px;
@@ -18,14 +22,14 @@
   }
 }
 
-.link {
-  margin: 0px 0px 0px 16px;
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  &__title {
-    color: #000;
-    font-weight: 600;
-    margin: 0px 5px 0px 0px;
+@media (max-width: 1288px) {
+  .card-item {
+    margin: 0px 45px 45px 0px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-item {
+    margin: 0px 0px 45px 0px !important;
   }
 }

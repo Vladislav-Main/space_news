@@ -1,6 +1,6 @@
-import React, { FC, ReactNode, useCallback, useEffect, useState } from 'react';
-import { DefaultRootState } from 'react-redux';
+import { FC, useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
+
 import { useAppDispatch, useAppSelector } from '../../hooks/useRedux';
 import { selectEntityById } from '../../store/reducers/ArticlesSlice';
 import { fetchArticles } from '../../store/reducers/AsyncThunk';

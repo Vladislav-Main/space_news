@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { IArticle } from '../../../../types/types';
-import { ArticleCard } from '../article-card/ArticleCard';
 
 import './articleList.scss';
+import { IArticle } from '../../../../types/types';
+import { ArticleCard } from '../article-card/ArticleCard';
 
 interface ArticleListProps {
   articles: IArticle[];

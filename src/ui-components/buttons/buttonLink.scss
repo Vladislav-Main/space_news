@@ -1,0 +1,12 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 5px;
+  &__title {
+    margin: 5px;
+    color: #363636;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
