@@ -31,12 +31,14 @@
     font-size: 16px;
     font-weight: 600;
     padding: 0px 0px 10px 0px;
+    width: auto;
   }
   &__input {
+    width: 100% !important;
   }
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 991px) {
   .home-page {
     align-items: center;
     &__search-block {
@@ -55,7 +57,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     &__search-block {
-      margin: 0px 10px 40px 10px;
+      margin: 0px 10px 40px 0px;
+      &__input {
+        width: 90% !important;
+      }
     }
     &__results-block {
       width: 100%;

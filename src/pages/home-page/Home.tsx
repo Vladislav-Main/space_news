@@ -40,7 +40,7 @@ export const Home = () => {
   }, [dispatch]);
   return (
     <div className="home-page _container">
-      <div className="home-page__search-block detailed-page">
+      <div className="home-page__search-block">
         <div className="search-block__title">Filter by keywords</div>
         <div className="search-block__input">
           <Paper
@@ -48,9 +48,9 @@ export const Home = () => {
             sx={{
               p: '2px 4px',
               display: 'flex',
-              alignItems: 'center',
+              alignItems: 'flex-start',
               maxWidth: 600,
-              marginRight: 10,
+              marginRight: 6,
             }}
           >
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
