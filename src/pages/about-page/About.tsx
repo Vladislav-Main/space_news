@@ -8,6 +8,7 @@ import { fetchArticles } from '../../store/reducers/AsyncThunk';
 import { IArticle } from '../../types/types';
 import { ButtonLink, Direction } from '../../ui-components/buttons/ButtonLink';
 import { DetailedArticle } from './components/detailed-article/DetailedArticle';
+import { Loader } from '../../ui-components/loader/Loader';
 
 export const About: FC = () => {
   const dispatch = useAppDispatch();
@@ -19,6 +20,7 @@ export const About: FC = () => {
   const [state, setState] = useState<IArticle>();
 
   const data = useAppSelector((state) => selectEntityById(state, id));
+  const { isLoading } = useAppSelector((state) => state.articleReducer);
 
   useEffect(() => {
     if (data) {
@@ -31,8 +33,13 @@ export const About: FC = () => {
 
   return (
     <>
-      {state && <DetailedArticle article={state} />}
-      {!state && (
+      {isLoading && (
+        <div className="home-page__loader-block">
+          <Loader />
+        </div>
+      )}
+      {state && !isLoading && <DetailedArticle article={state} />}
+      {!state && !isLoading && (
         <div className="error-page">
           <div className="error-page__message">
             <span>Unfortunatly this page is not found :(</span>

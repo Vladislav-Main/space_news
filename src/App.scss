@@ -10,3 +10,19 @@
   margin: 0px auto;
   box-sizing: content-box;
 }
+
+@media screen and (max-width: 1288px) {
+  ._container {
+    max-width: 90vw;
+    margin: 0px auto;
+    box-sizing: content-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  ._container {
+    max-width: 90vw;
+    margin: 0px 10px;
+    box-sizing: content-box;
+  }
+}

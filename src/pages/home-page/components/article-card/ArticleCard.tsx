@@ -38,12 +38,16 @@ export const SummaryTypography = styled(Typography)`
   overflow: hidden;
 `;
 
+export const CustomCardActionArea = styled(CardActionArea)`
+  max-width: 400px;
+`;
+
 export const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
   const query = useAppSelector((state) => state.articleReducer.searchTerm);
   return (
     <Card className="card-item">
       <Link to={`/detail/${article.id}`}>
-        <CardActionArea>
+        <CustomCardActionArea>
           <CardMedia
             component="img"
             height="217"
@@ -73,7 +77,7 @@ export const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
               />
             </SummaryTypography>
           </CardContent>
-        </CardActionArea>
+        </CustomCardActionArea>
         <ButtonLink link={`/detail/${article.id}`} variant={Direction.right}>
           Read more
         </ButtonLink>

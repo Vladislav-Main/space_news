@@ -49,7 +49,7 @@ export const Home = () => {
               p: '2px 4px',
               display: 'flex',
               alignItems: 'center',
-              width: 600,
+              maxWidth: 600,
             }}
           >
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
